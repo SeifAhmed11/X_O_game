@@ -1,0 +1,127 @@
+body{
+    /* font-family: "Alfa Slab One" sans-serif , Helvetica; */
+    /* font-family: "Roboto" , sans-serif , Helvetica; */
+    /* font-family: 'Libre Franklin', sans-serif , Helvetica; */
+    /* font-family: 'Silkscreen', cursive; */
+    font-family: 'Titan One', cursive;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    background-color: #121818;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title,
+.nn{
+    color: #90ee90;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.disblay{
+    color: #8bcad9;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Silkscreen', cursive;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile{
+    border: 5px solid #8bcad9;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX{
+    color: #ffe140;
+}
+
+.playerO{
+    color: #50d296;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset,
+#again{
+    background-color:#90ee90;
+    color:#121818;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    font-family: 'Silkscreen', cursive;
+    font-weight: 500;
+}
+
+.nums{
+    color: #90ee90;
+    font-size: 40px;
+    margin-top: 5%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.nums>.numX{
+    margin-right: 160px;
+}
+
+.nums>div>div{
+    border: 3px solid #8bcad9;
+    min-height: 18px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.nums>div>.color{
+    color: #fff760;
+    padding: 3px;
+    font-family: 'Silkscreen', cursive;
+}
+
+@media only screen and (max-width: 700px) {
+    .nums {
+        font-size: 12px;
+    }
+}
